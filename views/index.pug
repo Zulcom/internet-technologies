@@ -1,0 +1,6 @@
+extends layout
+block content
+  ul
+      -for (var x = 2; x <= 12; x++)
+       li
+           a(href='/s/'+x)= 'Лабораторная '+ x
