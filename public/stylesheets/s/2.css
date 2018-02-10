@@ -1,0 +1,29 @@
+td span {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    text-align: center;
+    color:white;
+}
+#viniam{
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+.img-sized {
+    width : 400px;
+    height : 400px;
+}
+.odd td > span{
+    background: gray;
+}
+
+.even td > span{
+    background: darkmagenta;
+}
+.odd td > img:hover{
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

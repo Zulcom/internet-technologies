@@ -1,0 +1,16 @@
+extends layout
+block content
+    link(href='/stylesheets/index.css', rel='stylesheet')
+    div(class='menu')
+      div
+          h2 Муравьёв Семён
+            ul
+              -for (var x = 2; x <= 12; x++)
+               li
+                   a(href='/s/'+x)= 'Лабораторная '+ x
+      div
+         h2 Александр Вертянкин
+            ul
+              -for (var x = 2; x <= 12; x++)
+               li
+                   a(href='/a/' + x)= 'Лабораторная ' + x
