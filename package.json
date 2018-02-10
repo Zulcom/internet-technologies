@@ -1,10 +1,31 @@
 {
-  "name": "it",
-  "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
+  "name": "internet-technologies",
+  "description": "Решаю лабы к курсу Интернет-технологии в ИКИТ по направлению 09.03.01",
+  "version": "0.0.1",
+  "keywords": [
+    "jquery,canvas,d3,webcokets,rest api"
+  ],
+  "homepage": "https://github.com/Zulcom/internet-technologies",
+  "bugs": "https://github.com/Zulcom/internet-technologies/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Semon Muravyov",
+    "url": "https://github.com/Zulcom/"
   },
+  "main": "app.js",
+  "scripts": {
+    "start": "set DEBUG=myapp:* & node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zulcom/internet-technologies"
+  },
+  "engines":{
+    "node":">=8.9.4",
+    "npm":">=5.6.0"
+  },
+  "os":["win32"],
   "dependencies": {
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
