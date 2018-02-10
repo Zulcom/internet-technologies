@@ -1,0 +1,12 @@
+mixin pag(author,curr)
+    h2 Лабораторная #{curr}, автор - #{author === 's' ? "Муравьёв Семён" : "Вертянкин Александр"}
+    -var anotherAuthor = (author === 's' ? 'a' : 's');
+    -curr--
+    div(class='pag')
+        ul
+            li
+                a(href='/'+author+'/'+ curr++) ←
+            li
+                a(href='/'+anotherAuthor+'/'+curr++) #{anotherAuthor}
+            li
+                a(href='/'+author+'/'+ curr)  →

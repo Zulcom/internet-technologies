@@ -1,0 +1,8 @@
+include ../layout
+include ../pag
+- var labNum = filename[filename.length-5];
+- var author = filename[filename.length-7];
+    link(href='/stylesheets/'+author+'/'+labNum+'.css', rel='stylesheet')
++pag(author,labNum)
+script(src='/js/s/3.js')
+div(class='console-container')
