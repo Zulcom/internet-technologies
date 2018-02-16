@@ -1,0 +1,7 @@
+include ../layout
+include ../pag
+- var labNum = filename[filename.length-5];
+- var author = filename[filename.length-7];
++pag(author,labNum)
+script(src='/js/s/4.js')
+canvas(id='canvas'  width="1000" height="500")
