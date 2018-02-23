@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+.pag ul{
+  list-style: none;
+}
+.pag ul li{
+  display: inline;
+}
+.pag ul li a{
+  text-decoration: none;
+}

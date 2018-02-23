@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index'); // путь index
 var s = require('./routes/s');// путь users
 var a = require('./routes/a');// путь users
+var ajax = require('./routes/ajax');// путь users
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // полключаем
 app.use('/', index); // присваиваем пути
 app.use('/s', s); // присваиваем пути
 app.use('/a', a); // присваиваем пути
+app.use('/ajax', ajax); // присваиваем пути
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

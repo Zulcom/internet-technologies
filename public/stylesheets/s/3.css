@@ -1,0 +1,10 @@
+.console-container{
+    margin: 0 auto;
+    width: 810px;
+    height: 30vh;
+    background-color:lightgray;
+    color:black;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 10px;
+}

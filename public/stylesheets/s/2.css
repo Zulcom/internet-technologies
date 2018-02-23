@@ -14,16 +14,26 @@ td span {
     width : 400px;
     height : 400px;
 }
-.odd td > span{
+td > span{
     background: gray;
 }
 
-.even td > span{
+td:nth-child(even) > span{
     background: darkmagenta;
 }
-.odd td > img:hover{
+td:nth-child(odd) > img:hover{
     animation:spin 4s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+td:nth-child(even) > img:hover{
+    animation:scale 4s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes scale { 100% { -moz-transform: scale(2.8); } }
+@-webkit-keyframes scale { 100% { -webkit-transform: scale(2.8); } }
+@keyframes scale { 100% { -webkit-transform: scale(2.8); transform:scale(2.8); } }
