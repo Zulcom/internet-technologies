@@ -1,0 +1,12 @@
+include ../layout
+include ../pag
+- var labNum = filename[filename.length-5];
+- var author = filename[filename.length-7];
++pag(author,labNum)
+link(href='/stylesheets/' + author + '/' + labNum + '.css', rel='stylesheet')
+form(method='post')
+    label(for='login')   Логин
+    input(name='login' type='text' id='login' placeholder='Логин')
+    label(for='password')   Пароль
+    input(name='password' type='password' id='password' placeholder='Пароль')
+    button(type='submit') Войти

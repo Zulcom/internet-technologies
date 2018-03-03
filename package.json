@@ -21,12 +21,15 @@
     "type": "git",
     "url": "https://github.com/Zulcom/internet-technologies"
   },
-  "engines":{
-    "node":">=8.9.4",
-    "npm":">=5.6.0"
+  "engines": {
+    "node": ">=8.9.4",
+    "npm": ">=5.6.0"
   },
-  "os":["win32"],
+  "os": [
+    "win32"
+  ],
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
